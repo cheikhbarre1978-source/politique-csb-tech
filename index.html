@@ -15,15 +15,16 @@
 <p><strong>Application : Mes dépenses Wave</strong><br>
 Éditeur : CSB_TECH<br>
 Contact : cheikhbarre1978@gmail.com<br>
-Dernière mise à jour : 1er octobre 2026</p>
+Dernière mise à jour : 4 octobre 2026</p>
 
 <p class="note">Cette application n'est ni éditée, ni approuvée, ni affiliée à Wave ni à aucun opérateur de
 monnaie mobile. Les noms cités appartiennent à leurs propriétaires respectifs.</p>
 
 <h2>En bref</h2>
-<p>Toutes vos données restent <strong>sur votre téléphone</strong>. L'application n'envoie aucune donnée sur
-Internet : elle ne demande même pas l'autorisation d'accéder à Internet. Il n'y a ni compte, ni publicité,
-ni outil de statistiques, ni partage avec des tiers.</p>
+<p>Vos opérations (montants, dates, libellés) restent <strong>sur votre téléphone</strong> : elles ne sont
+jamais envoyées sur Internet. Il n'y a ni compte, ni publicité, ni partage avec des tiers.
+La seule exception est technique : le composant Google ML Kit, utilisé pour lire le texte à l'écran, peut
+envoyer à Google des données de fonctionnement, décrites plus bas, sans jamais le contenu de vos opérations.</p>
 
 <h2>À quoi sert l'application</h2>
 <p>Elle vous aide à suivre vos dépenses et vos entrées d'argent faites avec une application de monnaie
@@ -42,9 +43,18 @@ mobile : totaux du mois, frais payés, classement par catégorie.</p>
       données locale sur votre téléphone, ainsi que vos choix de classement.</li>
 </ul>
 
+<h2>Données techniques envoyées à Google (ML Kit)</h2>
+<p>Pour lire le texte de l'écran pendant un scan, l'application utilise <strong>Google ML Kit</strong>
+(reconnaissance de texte). Le texte est lu sur votre téléphone, mais ML Kit peut envoyer à Google, de façon
+chiffrée (HTTPS), des données de diagnostic : modèle du téléphone, version d'Android, nom et version de
+l'application, identifiant d'installation (qui ne sert pas à vous identifier), temps de traitement et codes
+d'erreur. <strong>Ces données ne contiennent ni vos opérations, ni vos montants, ni le contenu de l'écran.</strong>
+C'est pourquoi l'application déclare l'autorisation Internet. Plus d'informations :
+<a href="https://developers.google.com/ml-kit/android-data-disclosure">développeurs Google – ML Kit</a>.</p>
+
 <h2>Ce que nous ne faisons pas</h2>
 <ul>
-  <li>Aucune donnée n'est envoyée, vendue ni partagée.</li>
+  <li>Vos opérations ne sont jamais envoyées, vendues ni partagées.</li>
   <li>Aucun identifiant publicitaire, aucune localisation, aucun contact, aucune photo.</li>
   <li>L'application n'effectue jamais d'opération à votre place : elle ne fait que lire.</li>
 </ul>
@@ -62,7 +72,8 @@ mobile : totaux du mois, frais payés, classement par catégorie.</p>
 <h2>Conservation et suppression</h2>
 <p>Les données restent sur votre téléphone tant que vous gardez l'application. Vous pouvez supprimer des
 opérations dans l'application, et <strong>désinstaller l'application efface toutes les données</strong>.
-Comme rien n'est envoyé ailleurs, il n'existe aucune copie à demander.</p>
+Vos opérations n'étant envoyées nulle part, il n'existe aucune copie à demander. Les données techniques
+de ML Kit décrites plus haut sont gérées par Google.</p>
 
 <h2>Enfants</h2>
 <p>L'application ne s'adresse pas aux enfants de moins de 13 ans.</p>
